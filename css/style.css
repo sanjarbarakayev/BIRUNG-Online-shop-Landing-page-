@@ -1,0 +1,423 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Roboto', sans-serif; /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+.center-block-main {
+	max-width: 1170px; margin: 0 auto;
+}
+.header-top {
+	margin: 20px 0; border-bottom: 1px solid #eee;
+}
+.logo {
+	float: left; font-size: 22.65px; margin-top: 5px; 
+}
+.logo a{
+	color: #67686d; text-decoration: none; font-family: 'Roboto Condensed', sans-serif;
+}
+.contacct-basket{
+	font-size: 12px;
+}
+.contacct-basket p {
+	float: right; font-weight: 600;
+}
+.header-contact {
+	margin-top: 8px;
+}
+	.header-contact img{
+		vertical-align: middle;
+	}
+.header-basket {
+border: 1px solid #eee; padding: 7px 20px; margin-left: 20px; margin-bottom: 20px;
+}
+	.header-basket a{
+		text-decoration: none; color: #7e7f84;	margin-left: 30px;
+	}
+		.header-basket a:hover{
+			color: #f45a40;
+		}
+.header-bottom {
+	margin: 10px 0;
+}
+.menu {
+	float: left;
+}
+.menu li{
+	float: left; margin-right: 30px;
+}
+.menu li a{
+	text-decoration: none; color: #7e7f84; font-size: 14px;
+}
+.menu li a:hover{
+	color: #f45a40;
+}
+.search-block {
+	float: left; margin-top: -3px;
+}
+.search-btn{
+	margin: 5px 5px 0 0;
+}
+.search{
+	border: none; font-size: 14px; color: #7e7f84;
+}
+.slickslider{
+	max-width: 1170px; margin: 0 auto; color: #f45a40; margin-bottom: 30px;
+}
+.sl_position{
+	position: relative;
+}
+.slickslider h2{
+	position: absolute; top: 240px; margin-left: 30px;	font-size: 59.3px; font-weight: 600; line-height: 1;
+}
+.slickslider p{
+	position: absolute; top: 380px; margin-left: 30px;	font-size: 14px;
+}
+.block3-main {
+	margin-bottom: 50px;
+}
+.block3-main article{
+	float: left; display: block; margin-left: 2.6%; max-width: 31.6%; margin-bottom: 30px; font-family: 'Roboto Condensed', sans-serif;
+}
+.block3-main article:first-child{
+	margin-left: 0;
+}
+.block3-main article img{
+	margin-bottom: 20px;
+}
+.block3-main article h2{
+	font-size: 22.65px; margin-bottom: 20px;
+}
+.block3-main article h2 a{
+	text-decoration: none;
+}
+.block3-main article h2 a:hover{
+	text-decoration: underline;
+}
+.block3-main article p{
+	font-size: 14px;
+}
+/*Birinchi marta mustaqilqilgan blokim.))))
+.popular_products-p {
+	margin: 40px auto; font-size: 22.65px;
+}
+.popular_products {
+	margin-bottom: 40px;
+}
+.popular_products article{
+	float: left; display: block; max-width: 22.6%; margin-left: 3.2%;
+}
+.popular_products article:first-child{
+	margin-left: 0;
+}
+.pph {
+	border: 1px solid #eeeeee; margin-top: -4px; padding: 20px 20px 5px 20px;
+}
+.pph h2{
+	font-size: 18px;  margin-bottom: 5px; text-transform: uppercase;
+}
+.pph h3{
+	font-size: 14px; font-style: italic; margin-bottom: 15px;
+}
+.pph p{
+	font-size: 10px;
+}
+.ppf {
+	border-top: 1px solid #eeeeee; margin-top: 20px; position: relative;
+}
+.ppf img{
+	float: right; position: absolute; right: 0; margin-top: -25px;
+}
+.ppf p{
+	margin: 10px 0; color: #f45a40; font-size: 14px;
+} */
+
+.block4-section {
+	margin-bottom: 60px;
+}
+.block4-section>h2{
+	text-align: center; color: #67686d; font-size: 22.65px; font-family: 'Roboto Condensed', sans-serif; margin-bottom: 30px;
+}
+.block4-main {}
+.block4-main article{
+	float: left; width: 22.6%; margin-left: 3.2%
+}
+.block4-main article:first-child{
+	margin-left: 0;
+}
+.block4-main article img{
+	display: block; margin:0 auto 0 auto;    
+}
+.block4-main article h2{
+	font-size: 18px; color: #67686d; margin-bottom: 10px; text-transform: uppercase;
+}
+.block4-main article h3{
+	font-size: 14px; margin-bottom: 20px; font-style: italic;
+}
+.block4-main article p{
+	font-size: 10px; color: #7e7f84; margin-bottom: 20px;
+}
+.block4-main-content {
+	border: 1px solid #eee; padding: 20px 20px 0 20px; border-top: 0;
+}
+.price-basket {
+	border-top: 1px solid #eee; padding-top: 20px;
+}
+.price {
+	float: left; font-size: 14px; color: #f45a40;	
+}
+.basket-btn {
+	float: right;
+}
+.about{
+	margin-bottom: 60px;
+}
+.about article{
+	float: left; width: 60%;
+}
+.about h2{
+	font-size: 22.65px; color: #67686d; font-weight: 600; margin-bottom: 30px;
+}
+.about p{
+	font-size: 14px; font-style: italic; margin-bottom: 25px;
+}
+.map{
+	 float: right; width: 35%;
+}
+.mapin{
+	position: relative;
+	height: 0;
+	padding-bottom: 75%;
+	overflow: hidden;
+}
+.mapin iframe{
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+.subscribe {
+	background: #f45a40  ; padding: 30px 0;
+}
+.subscribe h2{
+	color: #fff; text-transform: uppercase; float: left; font-size: 22.65px; margin-top: 5px;
+}
+.subscribe-form {
+	float: right;
+}
+.email-input {
+	float: left; border: none; text-transform: uppercase; color: #7e7f84; padding: 7px 20px;
+}
+.sign-input {
+	float: left; border: none; background: #ff674f; font-size: 22.65px; color: #fff; padding: 7px 20px; margin-left: 20px; cursor: pointer;
+}
+.ftr {
+	background: #2a2d34; padding: 30px 0;
+}
+.ftr article h2{
+	font-family: 'Roboto Condensed', sans-serif; font-size: 22.65px; color: #fff; margin-bottom: 10px;
+}
+.ftr article p{
+	font-size: 14px; margin-bottom: 10px;
+}
+.ftr article h3{
+	font-size: 14px; margin-bottom: -1px;
+}
+.ftr article h3 a{
+	color: #fff; font-style: normal; text-decoration: none;
+}
+.ftr article h3 a:hover{
+	text-decoration: underline;
+}
+.support {
+	float: left; width: 47%; margin-right: 3%;
+}
+.support a{
+	color: #7e7f84; text-decoration: none; display: block; margin-bottom: 5px;
+}
+.ftrmail {
+	text-transform: uppercase; margin-bottom: 20px; box-sizing: border-box; border: none; padding: 7px 20px; width: 100%;
+}
+.ftrtext {
+	text-transform: uppercase; margin-bottom: 20px; box-sizing: border-box; border: none; padding: 7px 20px; width: 100%; font-size: 14px;
+}	
+.ftrsubmit {
+	border: none; background: #ff674f; padding: 7px 20px; text-transform: uppercase; font-size: 12px; color: #fff; cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	.slickslider h2{
+	top: 200px; font-size: 45px;
+}
+.slickslider p{
+	top: 300px;
+}
+.block4-main article{
+	width: 45%; margin: 2.5%
+}
+.block4-main article:first-child{
+	margin: 2.5%
+}
+.block4-main article img{
+	width: 100%;    
+}
+}
+@media screen and (max-width: 960px){
+	.subscribe h2{
+	float: none; font-size: 20px; margin-top: 5px; text-align: center;
+}
+.subscribe-form {
+	float: none; display: table; margin: 20px auto;
+}
+}
+
+@media screen and (max-width: 734px) {
+	.slickslider h2{
+	top: 140px; font-size: 32px;
+}
+.slickslider p{
+	top: 215px;
+}
+.search-block {
+	float: none;
+}
+.search-block  form{
+	border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-top: 10px; float: right;
+}
+}
+@media screen and (max-width: 600px){
+	.about article{
+	float: none; width: 100%;
+}
+	.map{
+	 float: none; width: 80%; margin: 20px auto;
+}
+.block3-main article{
+	float: none; max-width: 95%; margin: 20px 20%;
+}
+.block3-main article:first-child{
+	margin-left: 20%;
+}
+}
+
+@media screen and (max-width: 480px) {
+	.slickslider h2{
+	top: 70px; font-size: 23px;
+}
+.slickslider p{
+	top: 120px;
+}
+.block4-main article{
+	float: none; max-width: 95%; margin: 10px 25%;
+}
+.block4-main article:first-child{
+	margin-left: 25%;
+}
+}
+@media screen and (max-width: 480px) {
+	.slickslider h2{
+	top: 50px; font-size: 18px;
+}
+.slickslider p{
+	top: 90px;
+}
+.logo {
+	float: none; text-align: center; margin-bottom: 10px; 
+}
+.contacct-basket {
+	float: none; display: table; margin: 0 auto; 
+}
+}
+@media screen and (max-width: 490px) {
+	.email-input {
+	float: none; margin-left: 0 2.5%; width: 95%; margin-bottom: 10px; box-sizing: border-box;
+ }
+.sign-input {
+	float: none; margin-left: 0;
+}
+}
